@@ -1,0 +1,11 @@
+services:
+  jekyll:
+    image: jekyll/jekyll:latest
+    volumes:
+      - .:/srv/jekyll
+    ports:
+      - "${HOST_PORT:-4000}:4000"
+    environment:
+      - JEKYLL_ENV=production
+    command: jekyll serve --watch --force_polling --verbose --trace --config _config.yml,_config_dev.yml
+   

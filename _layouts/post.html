@@ -13,7 +13,7 @@ layout: default
     <div class="card">
       <div class="card-header">About {{site.author}}</div>
       <div class="card-body">
-        <p class="author_bio">{{ site.author_bio }}</p>
+        <p class="author_bio">{{ site.author_bio | newline_to_br | markdownify }}</p>
         {%- include github_star_button.html -%}
       </div>
     </div>

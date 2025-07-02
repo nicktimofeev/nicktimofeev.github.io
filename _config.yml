@@ -1,9 +1,9 @@
-title: devlopr
-subtitle: A Portfolio Jekyll Theme Built for Developers
+title: Nick T.
+subtitle: C# | .NET | Full stack dev with a backend lean
 description: >- # this means to ignore newlines until "baseurl:"
-  devlopr-jekyll is a beautiful Jekyll Theme Built For Developers, which is optimized for speed and readability.
+  Oxfordshire based full stack software engineer, sepecialising in .NET
 
-url: "" # the base hostname & protocol for your site, e.g. https://example.github.io
+url: "https://nick.timofeev.co.uk" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
 
 # Navigation
@@ -21,12 +21,11 @@ urls:
 # Edit Author details (For multi authors check _data/authors.yml)
 
 author_logo: profile.png
-author: John Doe
+author: Nick Timofeev
 author_bio: Hi, my name is John Doe. I built this site using devlopr-jekyll :D
-author_email: "mail@sujaykundu.com"
-author_location: India
-author_website_url: "https://sujaykundu.com"
-typewrite-text: devlopr is a jekyll framework built for developers. You can edit this in _config.yml file
+author_email: "nick@timofeev.co.uk"
+author_location: Oxfordshire, UK
+typewrite-text: Full stack dev with a _back end lean_
 hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
 
 # Experiences
@@ -84,14 +83,14 @@ instagram_username: xplor4r
 # hyvor_talk_website_id: 476
 
 # wakatime username (coding activity)
-wakatime_username: sujaykundu777
+# wakatime_username: sujaykundu777
 
 # mailchimp embedded form url (newsletter):
-mailchimp_form_url: https://sujaykundu.us10.list-manage.com/subscribe/post?u=50bab1c85eae24ecfb0f68361&amp;id=3a2dd721d0
+# mailchimp_form_url: https://sujaykundu.us10.list-manage.com/subscribe/post?u=50bab1c85eae24ecfb0f68361&amp;id=3a2dd721d0
 
 # contact form - (choose formspress or getform)
 # getform_endpoint: 83b703c3-9e47-4df4-ac55-e24d7eb02abc
-formspree_email: johndoe@gmail.com
+# formspree_email: johndoe@gmail.com
 
 # releases - widget can be (sidebar, modal or embed)
 olvy_organization: devlopr

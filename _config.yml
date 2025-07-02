@@ -14,8 +14,6 @@ urls:
       url: /about
     - text: Blog
       url: /blog
-    - text: Gallery
-      url: /gallery
     - text: Contact
       url : /contact
 
@@ -135,11 +133,6 @@ collections:
     output: true
 
 defaults:
-  -
-    scope:
-      path: "gallery"
-    values:
-      permalink: /:path/:basename:output_ext
   -
     scope:
       path: ""

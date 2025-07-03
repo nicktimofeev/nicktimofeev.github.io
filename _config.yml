@@ -33,18 +33,36 @@ hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg.
 
 # Experiences
 author_work_experiences:
-            - company_name: Google
-              company_logo: google.png
-              company_url: https://google.com
-              designation: Software Engineer
-              description: Worked on various Google Products
-              visibility: true
-            - company_name: Microsoft
-              company_logo: microsoft.png
-              company_url: https://microsoft.com
-              designation: Azure Developer
-              description: Worked on various Azure Cloud Products
-              visibility: true
+              - company_name: 67 Bricks Ltd
+                company_logo: roles/67bricks.png
+                # company_url: https://67bricks.com
+                company_description: Software consultancy, with clients in the academic and standards publishing sectors. 
+                visibility: true
+                company_roles:
+                              - role_designation: Senior Software Developer
+                                role_description: Tech lead on a cross-project team, working with a range of clients
+                                role_date: 2022 - 2025
+                              - role_designation: Software Developer
+                                role_description: Developed and supported a range of pre-existing and greenfield projects for a range of clients in the standards and academic publishing industries.
+                                role_date: 2011 - 2022
+              - company_name: Lumina Learning
+                company_logo: roles/luminalearning.png
+                # company_url: https://luminalearning.com
+                company_description: Personality profiling startup, improving team cohesion through personality insights
+                visibility: true
+                company_roles:
+                              - role_designation: Junior Software Developer
+                                role_description: Focused on web development, with elements of  graphic design, IT management, intranet setup and client facing interactions, produced eLearning module, from collecting video and audio to editing the footage
+                                role_date: 2009 - 2010
+              - company_name: SmartCellar
+                company_logo: roles/smartcellar.png
+                # company_url: https://web.archive.org/web/20090716160636/http://www.smartcellarworld.com/
+                company_description: Beer monitoring startup, providing usage and  beer quality insights for pub owners
+                visibility: true
+                company_roles:
+                              - role_designation: Junior Software Developer
+                                role_description: Web app development on a LAMP stack and work on a dashboard graphing beer quality data
+                                role_date: Summer 2009
 
 # Education
 author_education_details:

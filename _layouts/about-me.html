@@ -141,29 +141,40 @@ layout: default
       <br />
       {% endif %} {% endfor %}
     </div>
-    {% endif %} {% if site.show_author_work_experiences == true %}
+    {% endif %} 
+    {% if site.show_author_work_experiences == true %}
     <div class="card">
       <h1 class="card-title">Work Experience</h1>
       <br />
-      {% for exp in site.author_work_experiences %} {% if exp.visibility == true
-      %}
-      <div class="row">
-        <div class="col-md-2">
-          <img
-            src="{{site.url}}{{site.baseurl}}/assets/img/{{ exp.company_logo }}"
-            class="company-logo"
-          />
+      {% for exp in site.author_work_experiences %} {% if exp.visibility == true%}
+        <div class="row">
+          <div class="col-md-2 text-md-center">
+            {% unless exp.company_logo == null or exp.company_logo == "" %}
+              <img
+                src="{{site.url}}{{site.baseurl}}/assets/img/{{ exp.company_logo }}"
+                class="company-logo" 
+              />
+            {% endunless %}
+          </div>
+          <div class="col-md-8">
+            <h2 class="experience-info">{{ exp.company_name}}</h2>
+            {% unless exp.company_url == null or exp.company_url == "" %}
+            <p><a href="{{exp.company_url}}">{{ exp.company_url}}</a></p>
+            <p>{{ exp.company_description }}</p>
+            {% endunless %}
+            {% for role in exp.company_roles %}
+              <div class="role">
+                <h4 class="experience-title">{{ role.role_designation }}</h4>
+                <p>{{ role.role_date }}</p>
+                <p class="experience-desc">{{ role.role_description }}</p>
+              </div>
+            {% endfor %}
+          </div>
         </div>
-        <div class="col-md-6">
-          <h4 class="experience-title">{{ exp.designation }}</h4>
-          <h6 class="experience-info">{{ exp.company_name}}</h6>
-          <p class="experience-desc">{{ exp.description }}</p>
-          <p><a href="{{exp.company_url}}">{{ exp.company_url}}</a></p>
-        </div>
-      </div>
       {% endif %} {% endfor %}
     </div>
-    {% endif %} {% if site.show_author_education_details == true %}
+    {% endif %}
+    {% if site.show_author_education_details == true %}
     <div class="card">
       <h1 class="card-title">Education</h1>
       <br />

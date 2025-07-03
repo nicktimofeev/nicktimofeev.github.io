@@ -65,12 +65,21 @@ author_work_experiences:
                                 role_date: Summer 2009
 
 # Education
+# Education
 author_education_details:
-              - college_logo: mit.png
-                college_name: MIT
-                college_url: https://mit.org
-                college_degree: CS Engineer
-                description: Bachelor of Technology
+              - college_logo: education/universityofreading.png
+                college_name: University of Reading, UK
+                college_url: https://reading.ac.uk
+                college_degree: B.Sc. in Artificial Intelligence and Cybernetics
+                date: Graduated 2011
+                description: Computer science, electronic design and mechatronics, with a focus on machine learning and neural networks.
+                visibility: true
+              - college_logo: education/sdd2019_practical_microservices.png
+                college_name: SDD Deep Dive 2019
+                college_url: https://sddconf.com
+                college_degree:  Practical Microservices with Allen Holub
+                date: 2019
+                description: 3-day intensive workshop on design using a microservices architecture, implementing systems through domain driven design and collaborative development using mobbing.
                 visibility: true
 
 # Projects

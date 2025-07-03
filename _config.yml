@@ -20,7 +20,7 @@ urls:
 
 # Edit Author details (For multi authors check _data/authors.yml)
 
-author_logo: profile.png
+author_logo: /authors/nick-timofeev.png
 author: Nick Timofeev
 author_bio: >- # supports markdown
   I like to make stuff, software ended up the thing I make most! 
@@ -28,7 +28,7 @@ author_bio: >- # supports markdown
   Over 13 years working with C# \| .NET Core \| Scala \| PostgreSQL \| Docker \| AWS \| Azure
 author_email: "nick@timofeev.co.uk"
 author_location: Oxfordshire, UK
-typewrite-text: Full stack dev with a _back end lean_
+typewrite-text: A full stack dev with a _back end lean_
 hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
 
 # Experiences

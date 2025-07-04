@@ -20,7 +20,7 @@ urls:
 
 # Edit Author details (For multi authors check _data/authors.yml)
 
-author_logo: profile.png
+author_logo: /authors/nick-timofeev.png
 author: Nick Timofeev
 author_bio: >- # supports markdown
   I like to make stuff, software ended up the thing I make most! 
@@ -28,31 +28,58 @@ author_bio: >- # supports markdown
   Over 13 years working with C# \| .NET Core \| Scala \| PostgreSQL \| Docker \| AWS \| Azure
 author_email: "nick@timofeev.co.uk"
 author_location: Oxfordshire, UK
-typewrite-text: Full stack dev with a _back end lean_
+typewrite-text: A full stack dev with a _back end lean_
 hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
 
 # Experiences
 author_work_experiences:
-            - company_name: Google
-              company_logo: google.png
-              company_url: https://google.com
-              designation: Software Engineer
-              description: Worked on various Google Products
-              visibility: true
-            - company_name: Microsoft
-              company_logo: microsoft.png
-              company_url: https://microsoft.com
-              designation: Azure Developer
-              description: Worked on various Azure Cloud Products
-              visibility: true
+              - company_name: 67 Bricks Ltd
+                company_logo: roles/67bricks.png
+                # company_url: https://67bricks.com
+                company_description: Software consultancy, with clients in the academic and standards publishing sectors. 
+                visibility: true
+                company_roles:
+                              - role_designation: Senior Software Developer
+                                role_description: Tech lead on a cross-project team, working with a range of clients
+                                role_date: 2022 - 2025
+                              - role_designation: Software Developer
+                                role_description: Developed and supported a range of pre-existing and greenfield projects for a range of clients in the standards and academic publishing industries.
+                                role_date: 2011 - 2022
+              - company_name: Lumina Learning
+                company_logo: roles/luminalearning.png
+                # company_url: https://luminalearning.com
+                company_description: Personality profiling startup, improving team cohesion through personality insights
+                visibility: true
+                company_roles:
+                              - role_designation: Junior Software Developer
+                                role_description: Focused on web development, with elements of  graphic design, IT management, intranet setup and client facing interactions, produced eLearning module, from collecting video and audio to editing the footage
+                                role_date: 2009 - 2010
+              - company_name: SmartCellar
+                company_logo: roles/smartcellar.png
+                # company_url: https://web.archive.org/web/20090716160636/http://www.smartcellarworld.com/
+                company_description: Beer monitoring startup, providing usage and  beer quality insights for pub owners
+                visibility: true
+                company_roles:
+                              - role_designation: Junior Software Developer
+                                role_description: Web app development on a LAMP stack and work on a dashboard graphing beer quality data
+                                role_date: Summer 2009
 
 # Education
+# Education
 author_education_details:
-              - college_logo: mit.png
-                college_name: MIT
-                college_url: https://mit.org
-                college_degree: CS Engineer
-                description: Bachelor of Technology
+              - college_logo: education/universityofreading.png
+                college_name: University of Reading, UK
+                college_url: https://reading.ac.uk
+                college_degree: B.Sc. in Artificial Intelligence and Cybernetics
+                date: Graduated 2011
+                description: Computer science, electronic design and mechatronics, with a focus on machine learning and neural networks.
+                visibility: true
+              - college_logo: education/sdd2019_practical_microservices.png
+                college_name: SDD Deep Dive 2019
+                college_url: https://sddconf.com
+                college_degree:  Practical Microservices with Allen Holub
+                date: 2019
+                description: 3-day intensive workshop on design using a microservices architecture, implementing systems through domain driven design and collaborative development using mobbing.
                 visibility: true
 
 # Projects
@@ -69,27 +96,24 @@ author_project_details:
                 visibility: true
 
 # social links
-twitter_username: xplor4r
-github_username:  sujaykundu777
-instagram_username: xplor4r
-# facebook_username: johndoe
-# linkedin_username: johndoe
-# behance_username: johndoe
-# medium_username: johndoe
-# telegram_username: johndoe
-# dribbble_username: johndoe
-# flickr_username: johndoe
+# twitter_username: 
+github_username:  bachelarius
+# instagram_username: 
+# facebook_username: 
+linkedin_username: nikolay-t
+# behance_username: 
+# medium_username: 
+# telegram_username: 
+# dribbble_username: 
+# flickr_username: 
 
 #for comments ( we got Disqus and Hyvor Commenting, uncomment the one you want to use )
 
-# disqus_shortname: sujay-kundu
-# hyvor_talk_website_id: 476
+# disqus_shortname: 
+# hyvor_talk_website_id: 
 
 # wakatime username (coding activity)
-# wakatime_username: sujaykundu777
-
-# mailchimp embedded form url (newsletter):
-# mailchimp_form_url: https://sujaykundu.us10.list-manage.com/subscribe/post?u=50bab1c85eae24ecfb0f68361&amp;id=3a2dd721d0
+# wakatime_username: 
 
 # contact form - (choose formspress or getform)
 # getform_endpoint: 83b703c3-9e47-4df4-ac55-e24d7eb02abc
@@ -107,28 +131,12 @@ permalink: pretty
 # Choose what to show ( can be true or false)
 show_author_work_experiences: true
 show_author_education_details: true
-show_author_project_details: true
+show_author_project_details: false
 
 # pagination of posts
 paginate: 4
 per_page: 4
 paginate_path: "/blog/page/:num/"
-
-# minify
-# compress_html:
-#   clippings: all
-#   comments: ["<!-- ", " -->"]
-#   endings: all
-#   ignore:
-#     envs: ['development']
-
-# Archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#   layout: archive
-#   permalinks:
-#     category: '/category/:name/'
 
 collections:
   authors:
@@ -155,33 +163,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
-
-  # jekyll admin is causing issues with github pages, so it's disabled by default
-  # - jekyll-admin 
-
-# Jekyll Admin Config
-# jekyll_admin:
-  # hidden_links:
-  #   - posts
-  #   - pages
-  #   - staticfiles
-  #   - datafiles
-  #   - configuration
-  # homepage: "posts"
-
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-
-### Switching Deployment Strategy (in DEPLOY_STRATEGY) file change the key accordingly:
-# none - For no default
-# gh-pages - For Github Pages
-# firebase - For Firebase Hosting
 
 sass:
   sass_dir: _sass

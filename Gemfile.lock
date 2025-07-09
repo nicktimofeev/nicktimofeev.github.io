@@ -13,7 +13,7 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
-    faraday (2.13.1)
+    faraday (2.13.2)
       faraday-net_http (>= 2.0, < 3.5)
       json
       logger
@@ -21,15 +21,26 @@ GEM
       net-http (>= 0.5.0)
     faraday-retry (2.3.2)
       faraday (~> 2.0)
+    ffi (1.17.2)
     ffi (1.17.2-arm64-darwin)
+    ffi (1.17.2-x86-linux-gnu)
+    ffi (1.17.2-x86-linux-musl)
     ffi (1.17.2-x86_64-darwin)
-    ffi (1.17.2-x86_64-linux-gnu)
     ffi (1.17.2-x86_64-linux-musl)
     forwardable-extended (2.6.0)
+    google-protobuf (4.31.1)
+      bigdecimal
+      rake (>= 13)
     google-protobuf (4.31.1-arm64-darwin)
       bigdecimal
       rake (>= 13)
-    google-protobuf (4.31.1-x86_64-linux-gnu)
+    google-protobuf (4.31.1-x86-linux-gnu)
+      bigdecimal
+      rake (>= 13)
+    google-protobuf (4.31.1-x86-linux-musl)
+      bigdecimal
+      rake (>= 13)
+    google-protobuf (4.31.1-x86_64-darwin)
       bigdecimal
       rake (>= 13)
     google-protobuf (4.31.1-x86_64-linux-musl)
@@ -102,13 +113,14 @@ GEM
     rexml (3.4.1)
     rouge (4.5.2)
     safe_yaml (1.0.5)
+    sass-embedded (1.89.2)
+      google-protobuf (~> 4.31)
+      rake (>= 13)
+    sass-embedded (1.89.2-aarch64-mingw-ucrt)
+      google-protobuf (~> 4.31)
     sass-embedded (1.89.2-arm64-darwin)
       google-protobuf (~> 4.31)
     sass-embedded (1.89.2-x86_64-darwin)
-      google-protobuf (~> 4.31)
-    sass-embedded (1.89.2-x86_64-linux-gnu)
-      google-protobuf (~> 4.31)
-    sass-embedded (1.89.2-x86_64-linux-musl)
       google-protobuf (~> 4.31)
     sawyer (0.9.2)
       addressable (>= 2.3.5)
@@ -126,9 +138,12 @@ GEM
     webrick (1.9.1)
 
 PLATFORMS
-  arm64-darwin-23
-  universal-darwin-21
-  x86_64-linux
+  aarch64-mingw-ucrt
+  arm64-darwin
+  ruby
+  x86-linux-gnu
+  x86-linux-musl
+  x86_64-darwin
   x86_64-linux-musl
 
 DEPENDENCIES
